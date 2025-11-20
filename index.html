@@ -1,180 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sina Riazi — Founder & CEO | Moodwhisper</title>
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    html, body, h1, h2, h3, h4, h5, h6 { font-family: "Roboto", sans-serif; }
-    .hero {
-      background: linear-gradient(135deg, #005f73, #0a1f44);
-      color: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      margin-bottom: 20px;
+    body {
+      font-family: "Inter", sans-serif;
     }
+
     .badge {
-      background: #00bfa5;
-      color: #fff;
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 13px;
-      margin: 3px;
-      display: inline-block;
+      @apply bg-teal-600 text-white text-xs px-3 py-1 rounded-full font-medium mr-2 mb-2 inline-block;
     }
-    .section-title { color: #005f73; }
   </style>
 </head>
-<body class="w3-light-grey">
-  <div class="w3-content w3-margin-top" style="max-width:1400px;">
-    <div class="w3-row-padding">
+
+<body class="bg-gray-100">
+
+  <!-- Container -->
+  <div class="max-w-6xl mx-auto px-4 py-10">
+
+    <!-- Hero Card -->
+    <section
+      class="bg-gradient-to-br from-[#005f73] to-[#0a1f44] text-white rounded-2xl p-10 shadow-xl mb-14 flex flex-col md:flex-row items-center gap-10">
+      <img src="20211126_143637.jpg" alt="Sina Riazi"
+        class="w-48 h-48 object-cover rounded-2xl shadow-lg border border-white/20" />
+
+      <div>
+        <h1 class="text-4xl font-bold mb-3">Sina Riazi</h1>
+        <p class="text-xl font-light mb-6">Founder & CEO — Moodwhisper</p>
+        <p class="text-lg leading-relaxed max-w-2xl opacity-90">
+          Building Moodwhisper to redefine employee engagement with AI. Focused on prediction, prevention,
+          and continuous improvement through data, sentiment analysis, and behavioral insights.
+        </p>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
       <!-- Left Column -->
-      <div class="w3-third">
-        <div class="w3-white w3-card-4">
-          <div class="w3-display-container">
-            <img src="20211126_143637.jpg" alt="Sina Riazi" style="width:100%" />
-            <div class="w3-display-bottomleft w3-container w3-text-white">
-              <h2>Sina Riazi</h2>
-            </div>
-          </div>
-          <div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Founder & CEO @ Moodwhisper</p>
-            <p><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-teal"></i>Vienna, Austria</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>sina.riazi@hotmail.com</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+43 660 7298774</p>
-            <hr/>
+      <aside class="md:col-span-1 space-y-10">
 
-            <p class="w3-large"><b><i class="fa fa-cogs fa-fw w3-margin-right w3-text-teal section-title"></i>Core Competencies</b></p>
-            <p>
-              <span class="badge">AI‑powered SaaS</span>
-              <span class="badge">Leadership</span>
-              <span class="badge">Product Strategy</span>
-              <span class="badge">Data‑Driven</span>
-              <span class="badge">Growth Hacking</span>
-            </p>
-            <p>
-              <span class="badge">Next.js</span>
-              <span class="badge">TypeScript</span>
-              <span class="badge">Node.js</span>
-              <span class="badge">PostgreSQL</span>
-              <span class="badge">AWS (RDS, SES, Cognito)</span>
-              <span class="badge">GPT APIs</span>
-              <span class="badge">Slack/Microsoft Teams APIs</span>
-              <span class="badge">Real-Time SSE</span>
-            </p>
-            <hr/>
+        <!-- Contact -->
+        <div class="bg-white shadow-md rounded-xl p-6">
+          <h2 class="text-xl font-semibold text-[#005f73] mb-6">Contact</h2>
 
-            <p class="w3-large"><b><i class="fa fa-language fa-fw w3-margin-right w3-text-teal section-title"></i>Languages</b></p>
-            <p>English – Fluent</p>
-            <p>German – Intermediate</p>
+          <div class="space-y-3 text-gray-700">
+            <p><i class="fa fa-briefcase mr-2 text-teal-600"></i>Founder & CEO @ Moodwhisper</p>
+            <p><i class="fa fa-map-marker-alt mr-2 text-teal-600"></i>Vienna, Austria</p>
+            <p><i class="fa fa-envelope mr-2 text-teal-600"></i>sina.riazi@hotmail.com</p>
+            <p><i class="fa fa-phone mr-2 text-teal-600"></i>+43 660 7298774</p>
           </div>
         </div>
-      </div>
+
+        <!-- Skills -->
+        <div class="bg-white shadow-md rounded-xl p-6">
+          <h2 class="text-xl font-semibold text-[#005f73] mb-4">Core Competencies</h2>
+
+          <div class="flex flex-wrap">
+            <span class="badge">AI-powered SaaS</span>
+            <span class="badge">Leadership</span>
+            <span class="badge">Product Strategy</span>
+            <span class="badge">Data-Driven</span>
+            <span class="badge">Growth Hacking</span>
+          </div>
+
+          <h2 class="text-xl font-semibold text-[#005f73] mt-6 mb-4">Tech Stack</h2>
+          <div class="flex flex-wrap">
+            <span class="badge">Next.js</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">AWS RDS / SES / Cognito</span>
+            <span class="badge">GPT APIs</span>
+            <span class="badge">Teams & Slack APIs</span>
+            <span class="badge">SSE</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="bg-white shadow-md rounded-xl p-6">
+          <h2 class="text-xl font-semibold text-[#005f73] mb-4">Languages</h2>
+          <p class="text-gray-800">English — Fluent</p>
+          <p class="text-gray-800">German — Intermediate</p>
+        </div>
+
+      </aside>
 
       <!-- Right Column -->
-      <div class="w3-twothird">
-        <div class="w3-container hero">
-          <h1>Hello, I’m Sina 👋</h1>
-          <p>I founded <strong>Moodwhisper</strong> to transform employee engagement using AI—understanding sentiment, spotting burnout early, and empowering teams to act before morale drops.</p>
-          <p>I’m a product-driven engineer and startup founder with a decade of full-stack experience. I thrive on launching MVPs quickly, iterating rapidly with real user feedback, and building scalable cloud-native platforms.</p>
-        </div>
+      <main class="md:col-span-2 space-y-10">
 
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal section-title"></i>
-            Professional Experience
+        <!-- Experience -->
+        <section class="bg-white shadow-md rounded-xl p-8">
+          <h2 class="text-2xl font-semibold text-[#005f73] mb-6 flex items-center">
+            <i class="fa fa-suitcase mr-3 text-teal-600"></i>Professional Experience
           </h2>
 
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Founder & CEO — Moodwhisper</b></h5>
-            <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>2024 – Present
-            </h6>
-            <ul>
-              <li>Launched MVP in under 6 months, validating demand with early-stage trial users</li>
-              <li>Built 346+ features including survey automation, predictive insights, localization, GDPR workflows, and real-time alerting</li>
-              <li>Integrated Slack, Microsoft Teams, and webhook-based systems for multi-channel engagement</li>
-              <li>Engineered a scalable, timezone-resilient architecture using Next.js, PostgreSQL, Cognito, GPT APIs, and SSE</li>
-              <li>Led product roadmap, stakeholder pitches, early adoption strategy, and grant preparation (AWS Preseed Austria)</li>
+          <!-- Moodwhisper -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold">Founder & CEO — Moodwhisper</h3>
+            <p class="text-teal-700 text-sm mb-3">2024 – Present</p>
+            <ul class="list-disc ml-6 text-gray-800 space-y-2">
+              <li>Launched MVP in 6 months and acquired early trial users across multiple countries</li>
+              <li>Delivered 346+ features including automation, predictive insights, GDPR workflows, multilingual system</li>
+              <li>Integrated Slack, Teams, email, and webhook-based workflows</li>
+              <li>Built cloud-native scalable architecture with Next.js, PostgreSQL, Cognito, GPT APIs, SSE</li>
+              <li>Led roadmap, investor outreach, and AWS Preseed grant preparation</li>
             </ul>
-            <hr />
           </div>
 
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Frontend Developer — Zooplus SE</b></h5>
-            <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 – 2024
-            </h6>
-            <ul>
-              <li>Worked on international e-commerce infrastructure at scale</li>
-              <li>Built and optimized React-based frontend components with TypeScript</li>
-              <li>Collaborated in Agile teams with backend, QA, and product design functions</li>
-              <li>Focused on performance, accessibility, and modular architecture</li>
+          <hr class="my-6">
+
+          <!-- Zooplus -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold">Frontend Developer — Zooplus SE</h3>
+            <p class="text-teal-700 text-sm mb-3">2022 – 2024</p>
+            <ul class="list-disc ml-6 text-gray-800 space-y-2">
+              <li>Contributed to high-scale international e-commerce architecture</li>
+              <li>Built advanced React + TypeScript UI components</li>
+              <li>Worked closely with backend, QA, and product teams</li>
+              <li>Improved performance, accessibility, and modular structure</li>
             </ul>
-            <hr />
           </div>
 
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Senior Web Developer — Projektbasis GmbH</b></h5>
-            <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 – 2022
-            </h6>
-            <ul>
-              <li>Built and maintained full-stack web applications using React, Node.js, Express, and TypeScript</li>
-              <li>Designed modular frontend systems and integrated third-party APIs (REST, GraphQL)</li>
-              <li>Set up CI/CD workflows and cloud deployments on AWS and Vercel</li>
-              <li>Worked cross-functionally with UI/UX and data teams to improve product experience</li>
+          <hr class="my-6">
+
+          <!-- Projektbasis -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold">Senior Web Developer — Projektbasis GmbH</h3>
+            <p class="text-teal-700 text-sm mb-3">2017 – 2022</p>
+            <ul class="list-disc ml-6 text-gray-800 space-y-2">
+              <li>Delivered full-stack systems using React, Node, Express, TypeScript</li>
+              <li>Built modular frontends and integrated APIs</li>
+              <li>Set up CI/CD pipelines using AWS + Vercel</li>
+              <li>Improved UI/UX and product performance</li>
             </ul>
-            <hr />
           </div>
 
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>IT Expert / Web Engineer — BehAfarinParto</b></h5>
-            <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 – 2017
-            </h6>
-            <ul>
-              <li>Led development of company’s internal systems and client web portals using HTML/CSS/JS and WordPress</li>
-              <li>Refactored legacy codebases for performance and scalability</li>
-              <li>Worked remotely from Austria, managing international stakeholders and delivery</li>
-              <li>Introduced Agile workflows to a formerly Waterfall-based team</li>
-            </ul>
-            <hr />
-          </div>
-        </div>
+          <hr class="my-6">
 
-        <div class="w3-container w3-card w3-white">
-          <h2 class="w3-text-grey w3-padding-16">
-            <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal section-title"></i>Education
+          <!-- BehAfarinParto -->
+          <div>
+            <h3 class="text-xl font-semibold">IT Expert / Web Engineer — BehAfarinParto</h3>
+            <p class="text-teal-700 text-sm mb-3">2009 – 2017</p>
+            <ul class="list-disc ml-6 text-gray-800 space-y-2">
+              <li>Developed internal systems and client portals</li>
+              <li>Refactored legacy systems for stability and speed</li>
+              <li>Managed international projects remotely</li>
+              <li>Introduced Agile methodologies</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="bg-white shadow-md rounded-xl p-8">
+          <h2 class="text-2xl font-semibold text-[#005f73] mb-6 flex items-center">
+            <i class="fa fa-graduation-cap mr-3 text-teal-600"></i>Education
           </h2>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>University of Raja</b></h5>
-            <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 – 2014
-            </h6>
-            <p>BSc ICT: Information & Telecommunication Engineering / Management</p>
-            <hr />
+
+          <div class="mb-6">
+            <h3 class="font-semibold">University of Raja</h3>
+            <p class="text-teal-700 text-sm">2012 – 2014</p>
+            <p class="text-gray-800">BSc ICT — Information & Telecommunication Engineering</p>
           </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>University of Applied Sciences</b></h5>
-            <h6 class="w3-text-teal">
-              <i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 – 2012
-            </h6>
-            <p>BSc ICT: Information & Telecommunication Engineering / Security</p>
+
+          <div>
+            <h3 class="font-semibold">University of Applied Sciences</h3>
+            <p class="text-teal-700 text-sm">2009 – 2012</p>
+            <p class="text-gray-800">BSc ICT — Information & Telecommunication Security</p>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   </div>
 
-  <footer class="w3-container w3-teal w3-center w3-margin-top">
-    <p>Connect with me</p>
-    <a class="fa fa-github w3-hover-opacity" style="font-size: xx-large;" href="https://github.com/sinariazi"></a>
-    <span> </span>
-    <a class="fa fa-linkedin w3-hover-opacity" style="font-size: xx-large;" href="https://www.linkedin.com/in/sina-riazi/"></a>
+  <!-- Footer -->
+  <footer class="bg-[#005f73] text-white py-8 text-center mt-14">
+    <p class="text-lg mb-3">Connect with me</p>
+    <div class="space-x-6 text-3xl">
+      <a href="https://github.com/sinariazi" class="hover:text-gray-200"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sina-riazi" class="hover:text-gray-200"><i class="fab fa-linkedin"></i></a>
+    </div>
   </footer>
+
 </body>
+
 </html>
